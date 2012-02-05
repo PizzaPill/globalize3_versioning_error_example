@@ -1,0 +1,2 @@
+module GlobalizeTestsHelper
+end

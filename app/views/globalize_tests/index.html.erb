@@ -1,0 +1,25 @@
+<h1>Listing globalize_tests</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Description</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @globalize_tests.each do |globalize_test| %>
+  <tr>
+    <td><%= globalize_test.title %></td>
+    <td><%= globalize_test.description %></td>
+    <td><%= link_to 'Show', globalize_test %></td>
+    <td><%= link_to 'Edit', edit_globalize_test_path(globalize_test) %></td>
+    <td><%= link_to 'Destroy', globalize_test, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Globalize test', new_globalize_test_path %>
